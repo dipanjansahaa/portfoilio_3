@@ -1,0 +1,48 @@
+@import url('root.css');
+@import url('base.css');
+
+
+
+/*-----------------------------------*\
+    #SKILLS
+\*-----------------------------------*/
+
+.skills .section-title {
+    margin-block-end: 20px;
+}
+
+.skills .section-text {
+    margin-block-end: 70px;
+}
+
+.skills-list {
+    display: grid;
+    gap: 25px;
+}
+
+.skills-item .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 10px;
+}
+
+.skills-title,
+.skills-data {
+    color: var(--white);
+    font-size: var(--fs-5);
+    font-family: var(--ff-barlow);
+    font-weight: var(--fw-600);
+}
+
+.skills-progress-box {
+    background-color: var(--white);
+    height: 8px;
+    border-radius: var(--radius-10);
+}
+
+.skills-progress {
+    background-color: var(--orange-soda);
+    height: 100%;
+    border-radius: inherit;
+}

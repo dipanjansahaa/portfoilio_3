@@ -1,0 +1,35 @@
+@import url('root.css');
+@import url('base.css');
+
+
+
+/*-----------------------------------*\
+    #ABOUT
+\*-----------------------------------*/
+
+.abs-img,
+.abs-icon {
+    display: none;
+}
+
+.about {
+    padding-block-start: 120px;
+}
+
+.about-banner {
+    background-color: var(--independence);
+    border-radius: var(--radius-10);
+    margin-block-end: 30px;
+}
+
+.about-banner > .img-cover {
+    border-radius: inherit;
+}
+
+.about :is(.section-title, .section-subtitle, .section-text) {
+    text-align: left;
+}
+
+.about :is(.section-title, .section-text) {
+    margin-block-end: 30px;
+}

@@ -1,0 +1,50 @@
+@import url('root.css');
+@import url('base.css');
+
+
+
+/*-----------------------------------*\
+    #FOOTER
+\*-----------------------------------*/
+
+.footer {
+    background-color: var(--independence2);
+    padding-block: 60px;
+}
+
+.copyright {
+    max-width: max-content;
+    margin-inline: auto;
+    margin-block-end: 10px;
+}
+
+.copyright-link {
+    display: inline-block;
+    transition: var(--transition-2);
+    font-weight: var(--fw-600);
+}
+
+.copyright-link:is(:hover, :focus) {
+    color: var(--white);
+}
+
+.footer-list {
+    max-width: max-content;
+    margin-inline: auto;
+}
+
+.footer-list * {
+    display: inline-block;
+}
+
+.footer-list > li:not(:last-child) {
+    margin-inline-end: 40px;
+}
+
+.footer-link {
+    transition: var(--transition-2);
+}
+
+.footer-link:is(:hover, :focus) {
+    color: var(--white);
+}

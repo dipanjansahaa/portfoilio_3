@@ -1,0 +1,84 @@
+@import url('root.css');
+@import url('base.css');
+
+
+
+/*-----------------------------------*\
+    #HEADER
+\*-----------------------------------*/
+
+.header {
+    position: fixed;
+    padding-block: 15px;
+    width: 100%;
+    background-color: var(--space-cadet);
+    height: 65px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: 0.25s var(--cubic-out);
+    z-index: 4;
+}
+
+.header.nav-active {
+    height: 335px;
+    transition-duration: 0.35s;
+}
+
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+}
+
+.logo {
+    color: var(--white);
+    font-family: var(--ff-poppins);
+    font-size: 2.4rem;
+}
+
+.nav-toggle-btn {
+    font-size: 3rem;
+}
+
+.nav-toggle-btn .close-icon,
+.nav-toggle-btn.active .menu-icon {
+    display: none;
+}
+
+.nav-toggle-btn.active .close-icon,
+.nav-toggle-btn .menu-icon {
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    padding-inline: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-2);
+}
+
+.header.nav-active .navbar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar-link {
+    color: var(--white);
+    font-family: var(--ff-barlow);
+    padding-block: 3px;
+    transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus) {
+    color: var(--orange-soda);
+}
+
+.navbar .btn {
+    background-color: var(--orange-soda);
+    margin-block-start: 15px;
+}
